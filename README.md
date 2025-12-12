@@ -1,0 +1,15 @@
+# Concepts learnt and applied in this project
+- **Passing Arrays to Functions:**
+    - **The "Decay" Rule:** When you pass an array to a function, it "decays" into a pointer (it loses its sense of self/size).
+    - **The Fix:** You must calculate the size of the array _outside_ the function (usually in `main`) and pass that size as a separate integer argument to the function.
+- **Linear Search:**
+    - Iterating through an array one element at a time to check if a target value exists.
+    - Returning the **index** (location) if found, or a standard "not found" flag (usually `-1`).
+- **Sorting (Bubble Sort):**
+    - Organizing data in ascending (low to high) or descending (high to low) order.
+    - Using **Nested Loops**: The outer loop controls the passes, and the inner loop compares and **swaps** adjacent elements.
+- **`std::fill()`:**
+    - A function from the `<algorithm>` library (or just standard utility) used to quickly set a range of array elements to a specific value.
+- **User Input into Arrays:**
+    - Using a loop to accept input (`cin`) into specific indices (`array[i]`).
+    - Handling the limit so users don't type past the array's capacity.
